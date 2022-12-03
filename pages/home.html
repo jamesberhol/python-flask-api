@@ -1,0 +1,48 @@
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+<link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ba857a3e96.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+<ul class="api">
+<li><div class="h"><p><i id="k1" class="fa-solid fa-list"></i> api/v1/apiname </p> </div> </li>
+<li><div id="show1">aa</div></li>
+<li><div class="h"><p><i id="k2" class="fa-solid fa-list"></i> api/v1/apiname </p> </div> </li>
+<li><div id="show2">aa</div></li>
+<li><div class="h"><p><i id="k3" class="fa-solid fa-list"></i> api/v1/apiname </p> </div> </li>
+<li><div id="show3">aa</div></li>
+</ul>
+</body>
+
+<script>
+$(document).ready(function() {
+  $("#k1").click(function() {
+    if ($("#show1").css("display") === "none") {
+        $("#show1").css("display", "block");
+    }
+    else {
+        $("#show1").css("display", "none");
+    }
+  });
+  $("#k2").click(function() {
+    if ($("#show2").css("display") === "none") {
+        $("#show2").css("display", "block");
+    }
+    else {
+        $("#show2").css("display", "none");
+    }
+  });
+  $("#k3").click(function() {
+    if ($("#show3").css("display") === "none") {
+        $("#show3").css("display", "block");
+    }
+    else {
+        $("#show3").css("display", "none");
+    }
+  });
+});
+</script>
